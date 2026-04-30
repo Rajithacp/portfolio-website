@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Data Science Portfolio</title>
+  <meta name="description" content="Personal portfolio website for a Data Science student." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8N7H5QvQ6l0U8mE0zYfJZx2Q6fXQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar" id="top">
+    <a href="#home" class="logo">Your<span>Portfolio</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero reveal">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Your Name</h1>
+        <h2>Data Science Student | Aspiring Data Scientist</h2>
+        <p class="tagline">Turning messy data into meaningful stories and practical solutions.</p>
+        <a href="#projects" class="btn">Explore My Projects</a>
+      </div>
+      <div class="hero-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Data-Driven Mindset</h3>
+        <p>I combine statistics, code, and curiosity to solve real-world problems.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>
+          My journey into data science started when I discovered how numbers can reveal hidden patterns in everyday decisions.
+          From analyzing classroom survey results to building my first predictive model, I became fascinated by extracting insights from data.
+        </p>
+        <p>
+          I chose Data Science because it blends problem-solving, creativity, and impact. It allows me to work on challenges in healthcare,
+          business, and technology by making evidence-based recommendations.
+        </p>
+        <p>
+          I am currently learning advanced machine learning, model evaluation techniques, and end-to-end deployment workflows while
+          strengthening my foundations in statistics and data storytelling.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid skills-grid">
+        <article class="card skill-card">
+          <h3><i class="fa-solid fa-code"></i> Programming</h3>
+          <p>Python, R, SQL</p>
+        </article>
+        <article class="card skill-card">
+          <h3><i class="fa-solid fa-table"></i> Data Analysis</h3>
+          <p>Pandas, NumPy, Excel</p>
+        </article>
+        <article class="card skill-card">
+          <h3><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+          <p>Scikit-learn, TensorFlow</p>
+        </article>
+        <article class="card skill-card">
+          <h3><i class="fa-solid fa-toolbox"></i> Tools</h3>
+          <p>Git, Power BI, Tableau</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid projects-grid">
+        <article class="card project-card">
+          <h3>Customer Churn Prediction</h3>
+          <p><strong>Problem:</strong> Predict which telecom customers are likely to churn.</p>
+          <p><strong>Dataset:</strong> IBM Telco Customer Churn dataset.</p>
+          <p><strong>Approach:</strong> Data cleaning, EDA, feature encoding, class balancing, train/validation split.</p>
+          <p><strong>Model:</strong> Random Forest Classifier.</p>
+          <p><strong>Results:</strong> Achieved 84% accuracy and improved recall for high-risk customers.</p>
+          <p><strong>Key Learnings:</strong> Feature engineering and recall optimization are crucial for retention use-cases.</p>
+          <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub Link</a>
+        </article>
+
+        <article class="card project-card">
+          <h3>House Price Estimation</h3>
+          <p><strong>Problem:</strong> Estimate housing prices from location and property features.</p>
+          <p><strong>Dataset:</strong> Ames Housing dataset.</p>
+          <p><strong>Approach:</strong> Missing value treatment, outlier handling, feature scaling, cross-validation.</p>
+          <p><strong>Model:</strong> XGBoost Regressor.</p>
+          <p><strong>Results:</strong> Reduced RMSE by 18% over baseline linear regression.</p>
+          <p><strong>Key Learnings:</strong> Model tuning and robust validation significantly improve regression performance.</p>
+          <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub Link</a>
+        </article>
+
+        <article class="card project-card">
+          <h3>Customer Segmentation with KMeans</h3>
+          <p><strong>Problem:</strong> Group retail customers by behavior for targeted marketing.</p>
+          <p><strong>Dataset:</strong> Mall Customers dataset.</p>
+          <p><strong>Approach:</strong> Feature selection, scaling, elbow method, cluster visualization.</p>
+          <p><strong>Model:</strong> KMeans Clustering.</p>
+          <p><strong>Results:</strong> Identified 5 actionable customer segments for campaign personalization.</p>
+          <p><strong>Key Learnings:</strong> Unsupervised learning can produce strategic business value without labeled outcomes.</p>
+          <a class="btn btn-outline" href="#" target="_blank" rel="noopener">GitHub Link</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications" class="section reveal">
+      <h2 class="section-title">Certifications & Courses</h2>
+      <div class="grid cert-grid">
+        <article class="card">
+          <h3>Machine Learning Specialization</h3>
+          <p><strong>Platform:</strong> Coursera</p>
+          <p><strong>Takeaway:</strong> Built strong intuition for supervised and unsupervised learning pipelines.</p>
+        </article>
+        <article class="card">
+          <h3>Data Analysis with Python</h3>
+          <p><strong>Platform:</strong> freeCodeCamp</p>
+          <p><strong>Takeaway:</strong> Improved data wrangling, visualization, and analysis workflow in pandas.</p>
+        </article>
+        <article class="card">
+          <h3>SQL for Data Science</h3>
+          <p><strong>Platform:</strong> Udemy</p>
+          <p><strong>Takeaway:</strong> Learned query optimization and analytical SQL for reporting and feature extraction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements" class="section reveal">
+      <h2 class="section-title">Achievements</h2>
+      <ul class="card achievement-list">
+        <li>Top 10 finalist in university data hackathon (2025).</li>
+        <li>Presented a mini research poster on model bias and fairness.</li>
+        <li>Contributed to an open-source data visualization project.</li>
+      </ul>
+    </section>
+
+    <section id="blog" class="section reveal">
+      <h2 class="section-title">Blog & Learning Notes</h2>
+      <div class="grid blog-grid">
+        <article class="card">
+          <h3>How KMeans Works Intuitively</h3>
+          <p>A beginner-friendly explanation of clusters, centroids, and the elbow method with practical examples.</p>
+        </article>
+        <article class="card">
+          <h3>What I Learned from My First ML Project</h3>
+          <p>Lessons on data cleaning, avoiding leakage, and why iterative experimentation matters more than perfect first attempts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <div class="card contact-info">
+          <p><i class="fa-solid fa-envelope"></i> your.email@example.com</p>
+          <p><i class="fa-brands fa-linkedin"></i> <a href="#" target="_blank" rel="noopener">linkedin.com/in/yourname</a></p>
+          <p><i class="fa-brands fa-github"></i> <a href="#" target="_blank" rel="noopener">github.com/yourusername</a></p>
+        </div>
+        <form class="card contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your Name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name. Built with curiosity and coffee.</p>
+    <a href="#top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
